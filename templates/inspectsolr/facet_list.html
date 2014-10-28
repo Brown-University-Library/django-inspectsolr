@@ -1,0 +1,5 @@
+<ul>
+  {% for facet_result in object_list %}
+  <li>{{facet_result.value}}, {{facet_result.count}}</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,10 @@
+<ul>
+  {% for field in object_list %}
+  <li>
+    <a href="{% url "facet-list" facet_field=field.name %}">
+    {{field.name}}, {{field.count}}
+    </a>
+  </li>
+  
+  {% endfor %}
+</ul>
